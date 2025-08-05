@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout'){
             steps {
-                git url: 'https://github.com/Deepakkr545/jenkins-docker-cicd.git'
+                git url: 'https://github.com/Deepakkr545/jenkins-docker-cicd.git', branch: 'main'
             }
         }
 
