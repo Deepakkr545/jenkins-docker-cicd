@@ -24,12 +24,12 @@ pipeline {
             steps {
                 echo 'Running Tests...'
                  sh '''
-                    python3 -m venv venv
-                    . venv/bin/activate
-                    venv/bin/pip install --upgrade pip
-                    venv/bin/pip install -r requirements.txt
-                    venv/bin/pytest test_app.py
-                    '''
+            python3 -m venv venv
+            . venv/bin/activate
+            pip install --upgrade pip
+            pip install -r requirements.txt pytest
+            pytest test_app.py
+        '''
             }
         }
 
