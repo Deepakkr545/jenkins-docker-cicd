@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         IMAGE_NAME = "jenkins-docker-app"
-        DOCKER_HUB_REPO = "your-docker-hub-username/jenkins-docker-app"
+        DOCKER_HUB_REPO = "deepakkr545/jenkins-docker-app"
     }
 
     stages {
